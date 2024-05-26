@@ -12,14 +12,24 @@
 body{margin: 0;}
     /*VISUALIZZAZIONE DA LAPTOP*/
 @media (max-width: 1200px) {
-
+    .contatti table {
+    width: 1200px;
+    }
+    .intro table {
+    width: 1200px;
+    }
 
 }
 
 
 /*VISUALIZZAZIONE DA TABLET*/
 @media (max-width: 980px) { 
-
+    .contatti table {
+    width: 980px;
+    }
+    .intro table {
+    width: 980px;
+    }
 
 }
 
@@ -27,8 +37,12 @@ body{margin: 0;}
 
 /*VISUALIZZAZIONE DA MOBILE ORIZZONTALE*/
 @media (max-width: 767px) {
-
-
+    .contatti table {
+    width: 767px;
+    }
+    .intro table {
+    width: 767px;
+    }
 }
 
 
@@ -36,7 +50,9 @@ body{margin: 0;}
 
 /*VISUALIZZAZIONE DA MOBILE VERTICALE*/
 @media (max-width: 480px) {
-
+.intro table {
+    width: 480px;
+}
 
 }
 /* Inserisci le tue dichiarazioni CSS qui */
@@ -53,7 +69,7 @@ body{margin: 0;}
 <div class="intro">
     <table width="1902" height="336" background="Sfondo.png">
         <tr>
-            <td> </td>
+            <td></td>
         </tr>
     </table>
 </div>
@@ -103,3 +119,17 @@ body{margin: 0;}
         </tr>
     </table>
 </div>
+<script>
+ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // Nascondi tutti gli altri elementi del documento
+            var elementsToHide = document.querySelectorAll('header, .intro, .spettacoli, .foto, .contatti');
+            elementsToHide.forEach(function(element) {
+                element.style.display = 'none';
+            });
+
+            // Mostra il messaggio di avviso
+            var warningMessage = document.createElement('div');
+            warningMessage.innerHTML = '<img src="Logo studi"><hr><br><h1><font face="Montserrat">Accesso da Telefono Non Consentito</h1><p>Accedi da computer per visionare la pagina.</font></p>';
+            document.body.insertBefore(warningMessage, document.body.firstChild);
+    }
+</script>
