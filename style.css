@@ -1,0 +1,234 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    font-family: Montserrat;
+}
+
+.informazioni {
+    display: flex;
+    align-items: center;
+}
+.informazioni p {
+    font-family: Montserrat;
+    font-size: 25;
+    margin-right: 85px;
+}
+.informazioni img {
+    margin-left: 1px;
+    float: left;
+    margin-right: 1200px;
+}
+
+.spettacoli {
+    font-family: Montserrat;
+    font-size: 25;
+    align-items: center;
+}
+
+.foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.foto img {
+    border-radius: 20px;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.foto table {
+    flex-grow: 1;
+    font-family: Montserrat;
+    font-size: 20px;
+    margin-bottom: 20px; 
+}
+
+.spazio {
+    display: flex;
+    align-items: center;
+}
+
+.contatti img{
+    border-radius: 50%;
+    float: center;
+}
+
+.contatti table {
+    font-family: Montserrat;
+    font-size: 20;
+}
+
+.cinquanta {
+    width: 50%;
+    height: 700px;
+    float:left
+}
+
+.bottone {
+    border-radius: 10px;
+    font-family: Montserrat;
+    color: white;
+    background-color: #31BF00;
+    text-align: center;
+    border: none;
+    font-size: 30px;
+    height: 45px;
+    width: 350px; 
+}
+
+.bottone:hover {
+    background-color: #279601;
+}
+
+.prenota {
+    display: flex;
+    align-items: vertical;
+    margin-right: 200px;
+    vertical-align: top;
+}
+.prenota table {
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-size: 20;
+    margin-left: 400px;
+    text-align: center;
+    float: left;
+
+}
+.tabella table {
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-size: 20;
+    margin-left: 50px;
+    text-align: center;
+    float: left;
+    margin-bottom: 20px;
+
+}
+.prenota img{
+border-radius: 20px;
+float:center;
+}
+
+.tabella p {
+    font-family: Montserrat;
+    margin-left: 50px;
+    font-size: 20;
+}
+
+.descrizione table {
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-size: 20;
+    margin-left: 50px;
+    text-align: left;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 250px;
+
+}
+
+.container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.seat {
+    background-color: gray;
+    height: 26px;
+    width: 32px;
+    margin: 3px;
+    font-size: 12px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: black; 
+}
+
+.seat.selected {
+    background-color: green;
+}
+
+.seat.sold {
+    background-color: white;
+    pointer-events: none;
+}
+
+.seat:nth-of-type(2){
+    margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2){
+    margin-left: 18px;
+}
+
+.seat:not(.sold):hover {
+    cursor:pointer;
+    transform: scale(1.2);
+}
+
+.showcase.seat:not(.sold):hover {
+    cursor:default;
+    transform: scale(1);
+}
+
+.showcase {
+    background: rgba(0,0,0,0.1);
+    padding: 10px 50px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase li{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+
+}
+
+.showcase li small {
+    margin-left: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.movie-container {
+    margin: 20px 0;
+}
+.screen {
+    background-color: black;
+    height: 50px;
+    margin: 15px 0;
+}
+
+p.text.span {
+    color: green;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+a:hover {
+    text-decoration: underline; 
+    color: inherit; 
+}
